@@ -188,7 +188,7 @@ extension SegementSlideDefaultSwitcherView {
             let buttonWidth: CGFloat
             switch innerConfig.type {
             case .tab:
-                buttonWidth = (bounds.width-innerConfig.horizontalMargin*2)/CGFloat(titleButtons.count)
+                buttonWidth = (UIScreen.main.bounds.width - 15) / 3
             case .segement:
                 let title = titleButton.title(for: .normal) ?? ""
                 let normalButtonWidth = title.boundingWidth(with: innerConfig.normalTitleFont)
