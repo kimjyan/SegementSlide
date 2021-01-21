@@ -26,6 +26,10 @@ open class SegementSlideDefaultViewController: SegementSlideViewController {
         return SegementSlideDefaultSwitcherConfig.shared
     }
     
+    open override var headerStickyHeight: CGFloat {
+        return headerView.frame.height - 44
+    }
+    
     open override var switcherHeight: CGFloat {
         return 44
     }
